@@ -1,0 +1,301 @@
+
+/*JOSEPH MINOW
+  29/04/2016. 
+  SUMMARY OF MY WORK
+  This assessment I am required to create a imaginary Solent Pizza website 
+  implementing HTML, CSS and JAVASCRIPT skills learnt so far.
+ */
+
+/*defines the contents, sizing, fonts of my webpages*/
+
+#wrapper {
+    width: 920px;
+    height: 80%;
+    margin: 0px auto;
+    font-family: arial, helvetica, sans-serif;
+    border: 2px solid #efefef;
+    border-radius: 25px;
+    background: linear-gradient(#fffcfc, #ffeeee);
+}
+header h1 {
+    text-decoration: underline;
+    text-align: center;
+    margin: 0 auto;
+    color: #AA6A6A;
+    padding: 20px 0px;
+}
+header img {
+    padding: 10px 0px 20px 100px;
+    width: 50px;
+    height: 50p;
+    float: left;
+}
+#top_nav {
+    background-color: #fffcfc;
+    width: 920px;
+}
+/*styles my navigation bar positioning*/
+
+#top_nav ul li {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    padding: 20px 30px 50px 70px;
+}
+/*styles my navigation bar text*/
+
+#top_nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: #AA6A6A;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 5px 5px 5px gray;
+}
+/*hover, active and link styling*/
+
+#top_nav ul li a:hover {
+    color: #ff0000;
+}
+#top_nav ul li a:active {
+    color: #ffffff;
+}
+#top_nav ul li a:link {
+    color: #00ffff;
+}
+#clockdate-full {
+    float: right;
+    background-color: #AA6A6A;
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+}
+.wrapper-clockdate {
+    width: 150px;
+    height: 45px;
+}
+#clock-large {
+    padding: 7px 0px 0px 40px;
+    background-color: #AA6A6A;
+    font-size: 15px;
+    text-shadow: 0px 0px 1px #fff;
+    color: #fff;
+    letter-spacing: 3px;
+    border-radius: 15px;
+}
+#date-large {
+    padding: 5px 0px 0px 15px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    color: #fff;
+}
+/*header one styling*/
+
+h1 {
+    font-size: 25px;
+    margin-right: 400px
+}
+h2 {
+    color: #AA6A6A;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+/*image sizing*/
+
+#myImage {
+    width: 920px;
+    height: 353px;
+}
+/*images styling*/
+
+#gallery ul li {
+    display: inline;
+    list-style-type: none;
+    float: left;
+    margin: 0px 30px 20px 40px;
+}
+/*contact form */
+
+#contactForm {
+    margin: 0px 100px 50px 5px;
+    float: left;
+    padding: 40px;
+}
+input[type=text],
+input[type=email],
+input[type=tel] {
+    display: block;
+    width: 250px;
+    padding: 5px;
+    font-size: 15px;
+    color: #666;
+    border-radius: 4px;
+}
+/*message text box sizing*/
+
+#messageTextBox {
+    width: 295px;
+    height: 100px;
+    display: block;
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #FFF;
+    font-size: 15px;
+    color: #666;
+    border-radius: 4px;
+    box-shadow: inset 0px 2px 3px #666, inset 0px -5px 3px #EEE;
+}
+input:focus,
+textarea:focus {
+    outline: solid #AA6A6A;
+}
+/*opening hours display*/
+
+#openhours {
+    font-size: 18px;
+    text-align: left;
+    margin: 50px 0px 30px 250px;
+    clear: both;
+    color: #ca9898;
+    tex
+}
+#openhours td{
+    padding-left: 10px;
+
+}
+/*map display setting*/
+
+iframe {
+    float: right;
+    margin: 50px 20px 50px 10px;
+    width: 350px;
+    height: 300px;
+}
+#TandC {
+    margin: 0px 60px 20px 60px;
+    background-color: floralwhite;
+}
+/*Terms and Condition styling*/
+
+#TandC p {
+    color: #AA6A6A;
+    font-size: 14px;
+    margin: 0px 60px 1px 60px;
+}
+h3.TCtitle {
+    color: #717171;
+    text-align: center;
+    font-size: 17px;
+}
+#orders {
+    width: 380px;
+    color: #AA6A6A;
+    float: left;
+}
+legend {
+    text-align: center;
+    font-weight: bold;
+}
+#orders fieldset {
+    padding: 0px 0px 5px 30px;
+    border-style: hidden;
+}
+input[type="number"] {
+    width: 35px;
+    font-size: 15px;
+}
+input[type="text"] {
+    width: 300px;
+    height: 20px;
+}
+#base p img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+#topping p img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+#extras p img {
+    width: 30px;
+    height: 30px;
+}
+input[type="submit"] {
+    padding: 5px 10px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+    background-color: #CA9898;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+input[type="submit"]:hover {
+    background-color: #AA6A6A;
+}
+input[type="submit"]:active {
+    background-color: #AA6A6A;
+    box-shadow: 0 4px #666;
+    transform: translateY(3px);
+}
+input[type="reset"] {
+    padding: 5px 10px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+    background-color: #CA9898;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+input[type="reset"]:hover {
+    background-color: #AA6A6A;
+}
+input[type="reset"]:active {
+    background-color: #AA6A6A;
+    box-shadow: 0 4px #666;
+    transform: translateY(3px);
+}
+#summary {
+    color: #AA6A6A;
+    float: left;
+    width: 410px;
+    height: 320px;
+    padding: 40px 0px 0px 120px;
+}
+#summary .cart-totals-key {
+    font-size: 22px;
+}
+
+#summary .cart-totals-value#total{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/*defines my footer*/
+
+#footer p {
+    clear: both;
+    margin: 0px auto;
+    width: 100%;
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    background-color: #edcaca;
+}
+#footer a img {
+    width: 20px;
+    height: 20px;
+    padding: 0px 0px 0px 50px;
+    float: left;
+}

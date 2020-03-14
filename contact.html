@@ -1,0 +1,147 @@
+<!doctype html>
+<!--This is my internet tech assessment2-->
+<!--JOSEPH MINNOW-->
+<!-- 29/04/2016-->
+<html>
+
+<head>
+    <!-- ensures the document is using the correct charset -->
+    <meta charset="utf-8">
+    <meta name="description" content="Solent pizza offering you student choicest pizzas and more" />
+    
+    <title> Contact Us</title>
+
+    <!--links webpage to javascript-->
+    <script type="text/javascript" src="scripts/contact.js"></script>
+
+    <!--links webpage to css style-->
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="icon" href="img/myicon.ico" />
+
+</head>
+    
+<body onload="contact()">
+
+    <div id="wrapper"><!--start of wrapper-->
+        
+       <header>
+           <img src="img/pizza_topping_2.png" alt="logo" />
+
+           <h1> Solent Pizza</h1><!--contact page heading-->
+           
+           <div id="clockdate-full">
+               <div class="wrapper-clockdate">
+                   <div id="clock-large"> 10 : 55 : 00</div>
+                   <div id="date-large"> 15-Feb-2016</div>
+               </div>
+           </div>
+
+        </header>
+
+       <div id="top_nav"><!--start of nav bar -->
+            
+            <ul>
+                <li> <a href="index.html">Home</a>
+                </li>
+                <li> <a href="contact.html">Contact Us</a>
+                </li>
+                <li> <a href="orders.html">Orders</a>
+                </li>
+            </ul>
+        </div> <!--end of nav bar-->
+       
+
+        <h2>OUR CONTACTS PAGE</h2>
+
+        <form id="contactForm">
+            <!--start of form div-->
+
+            <p>
+                <input type="text" name="firstName" placeholder="firstname" />
+            </p>
+
+            <p>
+                <input type="text" name="lastName" placeholder="lastname" />
+            </p>
+
+            <p>
+                <input id="Email" type="email" name="email" pattern ="(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" placeholder="email" />
+            </p>
+
+            <p>
+                <input type="tel" name="mytelephone" placeholder="Phone(xxx-xxxx-xxxx)" />
+            </p>
+
+            <p>
+                <textarea id="messageTextBox" name="message" placeholder="message"></textarea>
+            </p>
+
+            <input type="submit" value="SEND" />
+
+        </form>
+        <!--end of form div-->
+
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.848928308528!2d-1.4024761848173595!3d50.9080113795411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!%201s0x487476b1943c33e9%3A0x7b3d2a7c433db059!2sSouthampton+Solent+University!5e0!3m2!1sen!2suk!4v1456165670529"  allowfullscreen=""></iframe>
+
+     <div id="openhours">
+        <table>
+            <tr>
+                <th>Opening Hours</th>
+            </tr>
+            <tr>
+                <td> Monday</td><td> 09:00-23:00</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td><td> 09:00-23:00</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td><td> 09:00-23:00</td>
+            </tr>
+            <tr>
+                <td>Thursday</td><td> 09:00-23:00</td>
+            </tr>
+            <tr>
+                <td>Friday</td><td> 09:00-23:00</td>
+            </tr>
+            <tr>
+                <td>Saturday</td><td> 09:00-23:00</td>
+            </tr>
+            <tr>
+                <td>Sunday</td><td> 09:00-23:00</td>
+            </tr>
+        </table>
+    </div>
+
+        <div id="TandC">
+            <h3 class="TCtitle">
+                These Terms and Conditions apply to the Solent Pizza's Quality Guarantee (“Quality Guarantee”).</h3>
+
+            <p>The Quality Guarantee excludes any issues with a pizza related to the temperature of the product and/or the delivery time. The offer does not apply to sides, drinks or desserts.</p>
+
+            <p>To claim the Quality Guarantee:</p>
+
+            <p>No more than 2 slices of the pizza may have been eaten and the rest must be unaffected. Your pizza must be exchanged for the new one and you must show proof of purchase.</p>
+
+            <p>For delivery orders, you must use the Solent Pizza’s Quality Guarantee App or call the store where you originally placed the order within 30 minutes of the time of delivery subject to local store opening hours.</p>
+
+            <p>For collection orders, the Quality Guarantee must be claimed in-store at the time of collection.</p>
+
+        </div>
+
+        <footer id="footer">
+            <p>&copy; 2016 Joseph Minnow
+                <a href="http://www.solent.ac.uk/home.aspx">
+                    <!--link to solent website-->
+                    Please visit Solent for more info</a>
+                <a href="https://en-gb.facebook.com"><img src="img/facebook1.jpg" alt="facebook" />
+                </a>
+                <a href="https://twitter.com/login"><img src="img/twitter1.jpg" alt="twitter" />
+                </a>
+            </p>
+        </footer>
+        <!--End of footer-->
+     </div>   <!--end of wrapper-->
+</body>
+
+</html>

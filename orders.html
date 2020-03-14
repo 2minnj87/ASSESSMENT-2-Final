@@ -1,0 +1,211 @@
+<!doctype html>
+<!--This is my internet tech assessment2-->
+<!--JOSEPH MINNOW-->
+<!-- 29/04/2016-->
+<html>
+
+<head>
+    <!-- ensures the document is using the correct charset -->
+    <meta charset="utf-8">
+    <meta name="description" content="Solent pizza offering you student choicest pizzas and more" />
+    <title>Orders Page</title>
+
+    <!--links webpage to javascript-->
+    <script type="text/javascript" src="scripts/orders.js"></script>
+
+    <!--links webpage to css style-->
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="icon" href="img/myicon.ico" />
+
+</head>
+    
+<body onload="myOrders()">  
+    
+    <div id="wrapper"><!--start of wrapper-->
+    
+        <header>
+            <img src="img/pizza_topping_2.png" alt="logo" />
+            <h1> Solent Pizza</h1>
+
+        </header>
+
+   
+        <div id="clockdate-full">
+            <div class="wrapper-clockdate">
+                <div id="clock-large"> 10 : 55 : 00</div>
+                <div id="date-large"> 15-Feb-2016</div>
+            </div>
+        </div>
+
+        <div id="top_nav">
+            <!--start of nav bar -->
+            <ul>
+                <li> <a href="index.html">Home</a>
+                </li>
+                <li> <a href="contact.html">Contact Us</a>
+                </li>
+                <li> <a href="orders.html">Orders</a>
+                </li>
+            </ul>
+        </div>
+        <!--end of nav bar -->
+
+        <form id="orders">
+            <fieldset>
+                <legend>
+                    Select your pizza base*:
+                </legend>
+                <div id="base">
+
+                    <p><img src="img/pizzaPerperoni.jpg" alt="perperoni">
+                        <label>Add</label>
+                        <input type="checkbox" name="check" data-price="4.00" data-human-desc="Small" value="Small" />Small (£4.00)
+                        <input type="number" value="1" name="small-quantity" />Total: <span id="small-total"> £0</span>
+                    </p>
+
+                    <p><img src="img/pizzaPerperoni.jpg" alt="perperoni">
+                        <label>Add</label>
+                        <input type="checkbox" name="check" data-price="6.50" data-human-desc="medium" value="Medium" />Medium (£6.50)
+                        <input type="number" value="1" name="medium-quantity" /> Total: <span id="medium-total"> £0</span>
+                    </p>
+
+                    <p><img src="img/pizzaPerperoni.jpg" alt="perperoni">
+                        <label>Add</label>
+                        <input type="checkbox" name="check" data-price="9.50" data-human-desc="large" value="Large" />Large (£9.50)
+                        <input type="number" value="1" name="large-quantity" /> Total: <span id="large-total"> £0</span>
+                    </p>
+
+                    <p><img src="img/pizzaPerperoni.jpg" alt="perperoni">
+                        <label>Add</label>
+                        <input type="checkbox" name="check" data-price="11.50" data-human-desc="X-large" value="X-Large" />X-Large (£11.50)
+                        <input type="number" value="1" name="x-large-quantity" /> Total: <span id="x-large-total"> £0</span>
+                    </p>
+                </div>
+
+            </fieldset>
+            <p></p>
+
+
+            <fieldset>
+                <legend>
+                   Select one or more topping*:
+                </legend>
+                <!--topping selection-->
+                <div id="topping">
+
+                    <p><img src="img/cheese.jpg" alt="cheese">
+                        <label>Add</label>
+                        <input type="checkbox" name="check" data-price="00.10" data-human-desc="cheese" value="Cheese" />Cheese (£0.10)
+                        <input type="number" value="1" name="cheese-quantity" /> Total: <span id="cheese-total"> £0</span>
+                    </p>
+
+                    <p><img src="img/mushroom.jpg" alt="mushroom">
+                        <label>Add</label>
+                        <input type="checkbox" name="check" data-price="00.30" data-human-desc="mushrooms" value="mushrooms" />Mushrooms (£0.30)
+                        <input type="number" value="1" name="mushroom-quantity" />Total: <span id="mushroom-total"> £0</span>
+                    </p>
+
+                    <p><img src="img/ham.jpg" alt="ham">
+                        <label>Add</label>
+                        <input type="checkbox" name="check" data-price="00.40" data-human-desc="ham" value="ham" />Ham (£0.40)
+                        <input type="number" value="1" name="ham-quantity" />Total: <span id="ham-total"> £0</span>
+                    </p>
+
+                    <p><img src="img/anchovies.jpg" alt="cheese">
+                        <label>Add</label>
+                        <input type="checkbox" name="check" data-price="00.50" data-human-desc="Anchovise" value="Anchovise" />Anchovise (£0.50)
+                        <input type="number" value="1" name="anchovise-quantity" />Total: <span id="anchovise-total"> £0</span>
+                    </p>
+                </div>
+
+            </fieldset>
+            <p></p>
+
+
+            <fieldset>
+                <legend>
+                    Extras:
+                </legend>
+                <!--selection of extras-->
+                <div id="extras">
+
+                    <p><img src="img/chips.jpg" alt="chips">
+                        <label>Add</label>
+                        <input type="checkbox" name="check" data-price="1.50" data-human-desc="chips" value="Chips" />Chips (£1.50)
+                        <input type="number" value="1" name="chips-quantity" />Total: <span id="chips-total"> £0</span>
+                    </p>
+
+                    <p><img src="img/garlicBread.jpg" alt="cheese">
+                        <label>Add</label>
+                        <input type="checkbox" name="check" data-price="2.00" data-human-desc="Garlic Bread" value="Garlic Bread" />Garlic Bread (£2.00)
+                        <input type="number" value="1" name="garlicbread-quantity" />Total: <span id="garlicbread-total"> £0</span>
+                    </p>
+                </div>
+
+            </fieldset>
+            <p></p>
+
+ 
+            <fieldset id = "deliveryForm">
+                
+                <legend >Delivery Information</legend>
+                <!--delivery information-->
+                <p>
+                    <input type="text" name="firstName" placeholder="firstname" />
+               </p>
+
+                <p>
+                    <input type="text" name="addressLine" placeholder="Address" />
+                </p>
+               
+                <p>
+                    <input type="text" name="postcode"  placeholder="Post Code" />
+                </p>
+                
+                <p>
+                    <input id="myEmail" type="email"  name="Email" placeholder="Email" />
+                </p>
+                
+                <p>
+                <input type="tel" name="myTelephone" pattern="\d{3}[\-]\d{4}[\-]\d{4}" placeholder="Phone(xxx-xxxx-xxxx)" />
+            </p>
+                
+                <input type="submit" value="Place your Order" />
+                <input type="reset" value="Reset" />
+            </fieldset>
+            <p></p>
+
+        </form>
+        <div id="summary">
+            <!--order summary-->
+            <p class="cart-totals-key">Sub Total</p>
+            <div class="cart-totals-value" id="subTotal">&pound;0.00</div>
+
+
+            <p class="cart-totals-key">Taxes (20%)</p>
+            <p class="cart-totals-value" id="taxes">£0.00</p>
+
+            <p class="cart-totals-key">Total</p>
+            <p class="cart-totals-value" id="total">£0.00</p>
+           <!-- <input type="submit" value="Checkout" class="bttn">-->
+
+        </div>
+        <!-- end .summary -->
+
+        <footer id="footer">
+            <p>&copy; 2016 Joseph Minnow
+                <a href="http://www.solent.ac.uk/home.aspx">
+                    <!--link to solent website-->
+                    Please visit Solent for more info</a>
+                <a href="https://en-gb.facebook.com"><img src="img/facebook1.jpg" alt="facebook" />
+                </a>
+                <a href="https://twitter.com/login"><img src="img/twitter1.jpg" alt="twitter" />
+                </a>
+            </p>
+        </footer>
+        <!--End of footer-->
+
+        </div>
+<!--end of wrapper-->
+   </body>
+</html>
